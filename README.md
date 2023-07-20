@@ -1,6 +1,33 @@
-# Youtube
+# Youtube-Clone
 
-This template should help get you started developing with Vue 3 in Vite.
+Just a youtube clone with few functionality :)
+
+## Showcase
+
+### Login
+
+![Login Light](imgs/1_Login_Light.png)
+![Login Dark](imgs/1_Login_Dark.png)
+
+### Register
+
+![Register Light](imgs/2_Register_Light.png)
+![Register Dark](imgs/2_Register_Dark.png)
+
+### Home Page
+
+![Home Page Light](imgs/3_Home_Light.png)
+![Home Page Dark](imgs/3_Home_Dark.png)
+
+### Watch Video Page
+
+![Watch Video Page Light](imgs/4_Watch_Light.png)
+![Watch Video Page Dark](imgs/4_Watch_Dark.png)
+
+### Channel Page
+
+![Channel Page Light](imgs/5_Channel_Light.png)
+![Channel Page Dark](imgs/5_Channel_Dark.png)
 
 ## Recommended IDE Setup
 

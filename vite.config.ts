@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/youtube-clone-frontend/',
+  base: process.env.NODE_ENV === 'production' ? '/YouTube-Clone-Frontend/' : './',
   plugins: [vue()],
   resolve: {
     alias: {
