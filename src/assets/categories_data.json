@@ -1,0 +1,102 @@
+[
+  {
+    "category_id": "gaming",
+    "name": "Gaming"
+  },
+  {
+    "category_id": "ps5",
+    "name": "PS5"
+  },
+  {
+    "category_id": "football",
+    "name": "Football"
+  },
+  {
+    "category_id": "realmadrid",
+    "name": "Real Madrid"
+  },
+  {
+    "category_id": "cr7",
+    "name": "CR7"
+  },
+  {
+    "category_id": "cats",
+    "name": "Cats"
+  },
+  {
+    "category_id": "funny",
+    "name": "Funny"
+  },
+  {
+    "category_id": "animals",
+    "name": "Animals"
+  },
+  {
+    "category_id": "politics",
+    "name": "Politics"
+  },
+  {
+    "category_id": "popscience",
+    "name": "Pop Science"
+  },
+  {
+    "category_id": "quran",
+    "name": "Quran"
+  },
+  {
+    "category_id": "alkahf",
+    "name": "Al-Kahf"
+  },
+  {
+    "category_id": "programming",
+    "name": "Programming"
+  },
+  {
+    "category_id": "java",
+    "name": "Java"
+  },
+  {
+    "category_id": "rust",
+    "name": "Rust"
+  },
+  {
+    "category_id": "multithreading",
+    "name": "Multithreading"
+  },
+  {
+    "category_id": "alahly",
+    "name": "Al-Ahly"
+  },
+  {
+    "category_id": "egypt",
+    "name": "Egypt"
+  },
+  {
+    "category_id": "elzero",
+    "name": "Elzero"
+  },
+  {
+    "category_id": "html",
+    "name": "Html"
+  },
+  {
+    "category_id": "css",
+    "name": "Css"
+  },
+  {
+    "category_id": "freedom",
+    "name": "Freedom"
+  },
+  {
+    "category_id": "sports",
+    "name": "Sports"
+  },
+  {
+    "category_id": "pc",
+    "name": "PC"
+  },
+  {
+    "category_id": "news",
+    "name": "News"
+  }
+]

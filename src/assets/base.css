@@ -1,0 +1,48 @@
+@import url('default_theme.css');
+@import url('dark_theme.css');
+
+html[data-theme='earth'] {
+  --primary-background-color: rgb(246, 243, 237);
+  --alt-background-color: #f1ede3;
+  --primary-background-color-90: rgba(246, 243, 237, 0.9);
+  --primary-border-color: #e6decd;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--hover-10);
+}
+
+.material-symbols-sharp {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+}
+
+.material-symbols-sharp.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+}
+
+::-ms-reveal {
+  display: none;
+}

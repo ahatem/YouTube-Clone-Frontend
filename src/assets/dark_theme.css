@@ -1,0 +1,39 @@
+html[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Common */
+  --primary-background-color: rgb(25, 25, 25);
+  --primary-background-color-90: rgba(20, 20, 20, 0.9);
+  --alt-background-color: rgb(20, 20, 20);
+
+  --primary-text-color: rgb(241, 241, 241);
+  --secondary-text-color: #a8a8a8;
+
+  --primary-border-color: rgb(241 241 241 / 5.5%);
+
+  --surface-background-color: rgba(255, 255, 255, 0.1);
+
+  --hover-rgb: 255, 255, 255;
+  --hover-01: rgba(var(--hover-rgb), 0.01);
+  --hover-05: rgba(var(--hover-rgb), 0.05);
+  --hover-10: rgba(var(--hover-rgb), 0.1);
+  --hover-15: rgba(var(--hover-rgb), 0.15);
+  --hover-20: rgba(var(--hover-rgb), 0.2);
+
+  --shadow-color-1: rgba(145, 145, 145, 0.25);
+
+  --gradient-background-color-1: #201a1a;
+  --gradient-background-color-2: var(--primary-background-color);
+
+  /* Login Page */
+  --login-page-background-color-1: #080101;
+  --login-page-background-color-2: rgb(22, 22, 22);
+  --login-auth-background-color-rgb: 79, 69, 69;
+
+  /* Categories */
+  --category-background-color: rgba(255, 255, 255, 0.1);
+  --category-text-color: #f1f1f1;
+  --category-background-color-active: #f1f1f1;
+  --category-text-color-active: #0f0f0f;
+  --category-background-color-hover: rgba(255, 255, 255, 0.18);
+}

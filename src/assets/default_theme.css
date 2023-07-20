@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+
+  /* Base */
+  --border-radius-1: 4px;
+  --border-radius-2: calc(var(--border-radius-1) * 2);
+  --border-radius-3: calc(var(--border-radius-1) * 3);
+  --border-radius-4: calc(var(--border-radius-1) * 4);
+
+  --default-transition-time: 0.16s;
+
+  /* Common */
+  --primary-color-50: #fef2f2;
+  --primary-color-100: #fee2e2;
+  --primary-color-200: #fecaca;
+  --primary-color-300: #fca5a5;
+  --primary-color-400: #f87171;
+  --primary-color-500: #ef4444;
+  --primary-color-600: #dc2626;
+  --primary-color-700: #b91c1c;
+  --primary-color-800: #991b1b;
+  --primary-color-900: #7f1d1d;
+  --primary-color-950: #450a0a;
+
+  --primary-color: var(--primary-color-600);
+  --primary-color-rgb: 220, 38, 38;
+
+  --primary-background-color: rgb(255, 255, 255);
+  --primary-background-color-90: rgba(255, 255, 255, 0.9);
+  --alt-background-color: rgb(255, 255, 255);
+
+  --primary-text-color: rgb(15, 15, 15);
+  --secondary-text-color: rgb(100, 100, 100);
+
+  --primary-border-color: rgb(15 15 15 / 8.5%);
+
+  --surface-background-color: rgba(0, 0, 0, 0.05);
+
+  --hover-rgb: 0, 0, 0;
+  --hover-01: rgba(var(--hover-rgb), 0.01);
+  --hover-05: rgba(var(--hover-rgb), 0.05);
+  --hover-10: rgba(var(--hover-rgb), 0.1);
+  --hover-15: rgba(var(--hover-rgb), 0.15);
+  --hover-20: rgba(var(--hover-rgb), 0.2);
+
+  --shadow-color-1: rgba(100, 100, 100, 0.25);
+
+  --gradient-background-color-1: #fdf5f5;
+  --gradient-background-color-2: var(--primary-background-color);
+
+  /* Login Page */
+  --login-page-background-color-1: white;
+  --login-page-background-color-2: #f9f9f9;
+  --login-auth-background-color-rgb: 245, 245, 245;
+
+  /* Categories */
+  --category-background-color: rgba(0, 0, 0, 0.05);
+  --category-text-color: #0f0f0f;
+  --category-background-color-active: #0f0f0f;
+  --category-text-color-active: white;
+  --category-background-color-hover: rgba(0, 0, 0, 0.2);
+
+  /* Video */
+  --video-duration-background-color: rgba(18, 18, 18, 0.9);
+
+  --tag-bg-color: rgba(0, 0, 0, 0.05);
+}
