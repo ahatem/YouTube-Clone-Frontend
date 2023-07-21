@@ -115,4 +115,19 @@ aside.mini .sections .section h3 {
 aside.mini footer {
   display: none;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  aside {
+    position: absolute;
+    left: 0;
+    z-index: 99999;
+    overflow: visible;
+  }
+
+  aside.mini {
+    position: initial;
+    width: 0%;
+    z-index: -99999;
+  }
+}
 </style>

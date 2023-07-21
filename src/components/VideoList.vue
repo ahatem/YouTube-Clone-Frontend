@@ -16,4 +16,10 @@ section.video-list {
   flex-direction: column;
   gap: 0.2em;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section.video-list {
+    gap: 1.2em;
+  }
+}
 </style>

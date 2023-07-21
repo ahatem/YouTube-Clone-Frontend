@@ -109,4 +109,14 @@ defineProps<{ video: VideoChannelDetails }>()
   font-size: initial;
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .video {
+    flex-wrap: wrap;
+  }
+
+  .video .thumbnail {
+    width: 100%;
+  }
+}
 </style>

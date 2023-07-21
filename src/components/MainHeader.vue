@@ -28,8 +28,8 @@ function toggleDarkMode() {
     </section>
     <section class="end">
       <MainHeaderButton :icon="isDarkMode ? 'dark_mode' : 'light_mode'" @click="toggleDarkMode()" />
-      <MainHeaderButton icon="video_call" />
-      <MainHeaderButton icon="notifications" />
+      <!-- <MainHeaderButton icon="video_call" /> -->
+      <!-- <MainHeaderButton icon="notifications" /> -->
       <MainHeaderButton icon="account_circle" text="Login" id="login-btn" @click="$router.push({ name: `auth` })" />
       <!-- <MainHeaderButton img-src="https://api.dicebear.com/6.x/initials/svg?seed=Ahmed+Hatem" text="User Avatar" /> -->
     </section>
@@ -42,6 +42,7 @@ header {
   border-bottom: 1px solid var(--primary-border-color);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0.4em 1em;
   transition: color var(--default-transition-time), background-color var(--default-transition-time),
     border-color var(--default-transition-time);
@@ -60,6 +61,13 @@ header .middle {
   display: flex;
   flex-basis: 37%;
   gap: 0.2em;
+
+  /* center searchbar not matter what surround it  */
+  position: absolute;
+  margin: 0 auto;
+  right: 50%;
+  transform: translateX(50%);
+  width: 35%;
 }
 
 header .end {
@@ -74,5 +82,11 @@ header .end {
   border: 1px solid;
   font-weight: 500;
   font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header .middle {
+    display: none;
+  }
 }
 </style>

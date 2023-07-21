@@ -14,10 +14,12 @@ const filteredVideos = computed(() => {
   if (categoryRef.value.category_id === 'all') return videos
   return videos.filter((v) => v.categories.includes(categoryRef.value.category_id))
 })
+
+const isMobile = window.matchMedia('(min-width: 320px) and (max-width: 480px)').matches
 </script>
 
 <template>
-  <MainLayout>
+  <MainLayout :minimize-sidebar="isMobile">
     <section class="container">
       <CategoriesList class="categories-list" :categories="categories" @on-category-click="(c) => (categoryRef = c)" />
       <VideosGrid class="videos-grid" :videos="filteredVideos" />

@@ -433,4 +433,14 @@ section.comment-actions > :not(:first-child)::after {
 .more-actions-btn span.icon {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section.start > section:nth-child(2) {
+    display: none;
+  }
+
+  .comment .comment-details .more-actions-btn {
+    display: none;
+  }
+}
 </style>

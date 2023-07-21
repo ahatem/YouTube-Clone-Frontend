@@ -77,7 +77,7 @@ h1.logo::after {
   border-radius: 4px;
   background: var(--primary-color);
   box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0.1);
-  animation: pulse-kefe91md 1.5s infinite linear;
+  animation: pulse-animation 1.5s infinite linear;
   position: relative;
   transform: translateX(5px);
 }
@@ -97,7 +97,7 @@ h1.logo::after {
   animation-delay: -1s;
 }
 
-@keyframes pulse-kefe91md {
+@keyframes pulse-animation {
   100% {
     box-shadow: 0 0 0 2.8rem #0000;
   }

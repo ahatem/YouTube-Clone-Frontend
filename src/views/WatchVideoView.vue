@@ -67,4 +67,10 @@ section.recommendations {
   padding: 1em 0;
   background-color: transparent !important;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section.video-container {
+    max-width: 100%;
+  }
+}
 </style>

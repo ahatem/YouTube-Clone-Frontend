@@ -15,8 +15,6 @@ function formatDate(dateString: string): string {
 <template>
   <section class="video">
     <iframe
-      width="829"
-      height="466"
       :src="`https://www.youtube.com/embed/${video.video_id}?autoplay=0`"
       title="I programmed in TypeScript like in Haskell (Lazy Evaluation)"
       frameborder="0"
@@ -87,9 +85,12 @@ function formatDate(dateString: string): string {
 
 <style scoped>
 iframe {
-  border-radius: var(--border-radius-4);
-  width: 100%;
   position: relative;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--border-radius-4);
+  /* height: 466px; */
   /* box-shadow: 0 0 115px 16px var(--hover-05); */
 }
 
@@ -261,5 +262,24 @@ section.bottom-row .description pre {
 
 .read-more-btn:hover {
   background-color: var(--hover-10);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .details .top-row {
+    flex-wrap: wrap;
+    gap: 0;
+    flex-grow: 1;
+  }
+
+  .details .top-row .owner {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .details .top-row section.actions-container {
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 0.75rem;
+  }
 }
 </style>

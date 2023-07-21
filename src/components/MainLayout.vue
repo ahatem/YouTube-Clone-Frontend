@@ -14,7 +14,7 @@ const minimizedSidebar = ref(props.minimizeSidebar)
     <MainHeader class="header" @onMenuClick="minimizedSidebar = !minimizedSidebar" />
     <section>
       <MainSidebar class="sidebar" :minimized="minimizedSidebar" />
-      <div class="main">
+      <div class="main" :class="!minimizedSidebar ? 'dimmed-background' : ''">
         <slot></slot>
       </div>
     </section>
@@ -54,5 +54,19 @@ const minimizedSidebar = ref(props.minimizeSidebar)
     rgba(var(--login-auth-background-color-rgb), 0.02),
     rgba(var(--primary-color-rgb), 0.035)
   ); */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .dimmed-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    user-select: none;
+  }
 }
 </style>
